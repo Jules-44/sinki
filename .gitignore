@@ -1,0 +1,15 @@
+
+# AI agent scaffolding (copilot-standards)
+AGENTS.md
+.ai
+.agents/
+.claude/
+.github/copilot-instructions.md
+.github/skills
+.mcp.json
+.vscode/mcp.json
+# Dependencies & build output
+node_modules/
+dist/
+.DS_Store
+*.local

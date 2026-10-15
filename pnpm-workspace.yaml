@@ -1,0 +1,14 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+  - 'games/*'
+
+allowBuilds:
+  esbuild: true
+  msgpackr-extract: true
+
+blockExoticSubdeps: false
+
+onlyBuiltDependencies:
+  - esbuild
+  - msgpackr-extract
