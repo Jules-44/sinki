@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@colyseus/sdk": "^0.18.5",
+    "@sinki/game-lowpolyisland": "workspace:*",
     "@sinki/platform-core": "workspace:*",
     "canvas-confetti": "^1.9.4",
     "lucide-vue-next": "^0.475.0",

@@ -228,7 +228,7 @@ export class PlatformRoom extends Room<{ state: PlatformRoomState }> {
     this.addSystemChat(`${nickname} joined the room`);
 
     // For real-time 3D games (like convoy-raid), auto-initialize match if not already running
-    if (this.state.gameId === 'convoy-raid') {
+    if (this.state.gameId === 'convoy-raid' || this.state.gameId === 'lowpolyisland') {
       const gameDef = getGame(this.state.gameId);
       if (gameDef && !this.internalGameState) {
         const ctx: GameContext = {

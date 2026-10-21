@@ -1,0 +1,15 @@
+{
+  "name": "@sinki/game-lowpolyisland",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./*": "./src/*"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "types": "./src/index.d.ts"
+}

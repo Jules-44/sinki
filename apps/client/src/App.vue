@@ -50,9 +50,10 @@
       </template>
 
       <template v-else>
-        <div :class="['room-grid', { 'convoy-mode': platformState.gameId === 'convoy-raid' }]">
+        <div :class="['room-grid', { 'convoy-mode': platformState.gameId === 'convoy-raid' || platformState.gameId === 'lowpolyisland' }]">
           <div class="table-column">
-            <ConvoyGame v-if="platformState.gameId === 'convoy-raid'" />
+            <LowPolyIslandGame v-if="platformState.gameId === 'lowpolyisland'" />
+            <ConvoyGame v-else-if="platformState.gameId === 'convoy-raid'" />
             <SeatLayout v-else />
           </div>
           <div class="chat-column">
@@ -75,6 +76,7 @@ import { platformState, leaveRoom } from './colyseus.js';
 import Lobby from './components/Lobby.vue';
 import SeatLayout from './components/SeatLayout.vue';
 import ConvoyGame from './components/ConvoyGame.vue';
+import LowPolyIslandGame from './components/LowPolyIslandGame.vue';
 import ChatBox from './components/ChatBox.vue';
 
 const toastMessage = ref<string | null>(null);

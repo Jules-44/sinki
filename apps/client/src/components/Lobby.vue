@@ -207,7 +207,7 @@ import { parseChatMessage, extractRoomCode } from '../utils/chat-tokens.js';
 
 const nickname = ref(platformState.myNickname);
 const roomCodeInput = ref('');
-const selectedGame = ref('convoy-raid');
+const selectedGame = ref('lowpolyisland');
 const loungeChatInput = ref('');
 const chatContainer = ref<HTMLElement | null>(null);
 
@@ -251,6 +251,13 @@ onMounted(() => {
 });
 
 const availableGames = [
+  {
+    id: 'lowpolyisland',
+    name: 'Low-Poly Islands',
+    tag: '3D OPEN WORLD',
+    desc: 'Retro 90s low-poly adventure! Quad bikes, cliff-jumping hang gliders, seabirds, and 3 explorable islands (Tropical, CyberCity, Kamakura).',
+    badge: 'Playable Now',
+  },
   {
     id: 'convoy-raid',
     name: 'Battle Cars (3D Wasteland)',

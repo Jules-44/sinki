@@ -20,6 +20,9 @@ importers:
       '@colyseus/sdk':
         specifier: ^0.18.5
         version: 0.18.5(@colyseus/core@0.18.18)(typescript@5.9.3)(zod@4.6.5)
+      '@sinki/game-lowpolyisland':
+        specifier: workspace:*
+        version: link:../../games/lowpolyisland
       '@sinki/platform-core':
         specifier: workspace:*
         version: link:../../packages/platform-core
@@ -94,6 +97,12 @@ importers:
       typescript:
         specifier: ^5.8.0
         version: 5.9.3
+
+  games/lowpolyisland:
+    dependencies:
+      three:
+        specifier: ^0.186.1
+        version: 0.186.1
 
   packages/platform-core:
     devDependencies:
